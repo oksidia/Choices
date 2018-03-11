@@ -511,7 +511,7 @@ class Choices {
           }
 
           // If we have grouped options
-          if (activeGroups.length >= 1 && this.isSearching !== true) {
+          if (activeGroups.length >= 1) {
             choiceListFragment = this.renderGroups(activeGroups, activeChoices, choiceListFragment);
           } else if (activeChoices.length >= 1) {
             choiceListFragment = this.renderChoices(activeChoices, choiceListFragment);
